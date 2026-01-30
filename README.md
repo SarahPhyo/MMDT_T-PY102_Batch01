@@ -15,11 +15,11 @@ This method allows you to submit your homework directly through the GitHub websi
 * Click the **'Fork'** button in the top-right corner. This will create a personal copy of the repository in your GitHub account.
 
 **Step 2:Locate Your Assigned Folder**
-* Inside the repository, a folder named with your student ID (e.g., PY103_Batch01_01/) has already been created for you by the instructor.
+* Inside the repository, a folder named with your student ID (e.g., PY102001001/) has already been created for you by the instructor.
 * Do not create a new folder or rename the existing one. You must place all your lab submissions inside your assigned folder only.
 
 **Step 3: Upload Your Homework Files**
-* Open your ID-named folder (for example PY103_Batch01_01/).
+* Open your ID-named folder (for example PY102001001/).
 * Click **'Add file'** and then **'Upload files'**.
 * Drag and drop all your completed homework files directly into the browser window.
 * Each lab must be a single Python file named exactly as shown below:
@@ -43,21 +43,21 @@ This is the standard, professional method for using Git. It requires you to have
 * **Fork:** First, fork the main homework repository on GitHub.
 * **Clone:** Open your terminal or command prompt. Clone your forked repository to your local machine:
     ```
-    git clone [https://github.com/](https://github.com/)<your-name>/MMDT_T-PY103_Batch[01]
+    git clone [https://github.com/](https://github.com/)<your-name>/MMDT_T-PY102_Batch[01]
     ```
 * **Navigate:** Change into the repository folder:
     ```
     cd [name of the repo]
     ```
 **Step 2:Locate Your Assigned Folder**
-* Inside the repository, a folder named with your student ID (e.g., PY103_Batch01_01/) has already been created for you by the instructor.
+* Inside the repository, a folder named with your student ID (e.g., PY102001001/) has already been created for you by the instructor.
 * Do not create a new folder or rename the existing one. You must place all your lab submissions inside your assigned folder only.
 
 **Step 3: Add, Commit, and Push Your Homework**
 * Save or copy your lab file into your ID folder using this exact naming convention:
 ```
-PY103_Batch01_01/lab01.py
-PY103_Batch01_01/lab02.py
+PY102001001/lab01.py
+PY102001001/lab02.py
 ```
 * Stage the new files to be tracked by Git:
     ```
