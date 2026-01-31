@@ -21,7 +21,8 @@ MIN_ID = 1
 MAX_ID = 20
 
 # Allowed lab filenames
-ALLOWED_LABS = {"lab01.py", "lab02.py", "lab03.py"}
+ALLOWED_LABS = {"lab01.py", "lab02.py", "lab03.py", 
+                "lab04.py", "lab05.py", "lab06.py", "lab07.py"}
 
 TZ = ZoneInfo("America/Chicago")
 LAB_DEADLINES = {
@@ -39,7 +40,6 @@ GRACE_DAYS = 2
 LATE_PENALTY_POINTS = 6      
 ZERO_AFTER_DAYS = 7
 LAB_MAX_POINTS = 20 
-
 
 def run(cmd: List[str]) -> str:
     """Run a command and return stdout; exit on error."""
