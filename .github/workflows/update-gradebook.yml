@@ -21,7 +21,7 @@ jobs:
 
       - name: Update gradebook from recent Autograde runs
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ github.token}}
           REPO: ${{ github.repository }}
           WORKFLOW_FILE: autograde.yml
           ARTIFACT_NAME: autograder_result
@@ -38,7 +38,7 @@ jobs:
 
           def api_get(url: str):
             req = Request(url, headers={
-              "Authorization": f"Bearer {TOKEN}",
+              "Authorization": f"token {TOKEN}",
               "Accept": "application/vnd.github+json",
               "User-Agent": "gradebook-updater"
             })
