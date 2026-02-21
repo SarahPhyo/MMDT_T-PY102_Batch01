@@ -24,7 +24,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO: ${{ github.repository }}
           WORKFLOW_FILE: autograde.yml
-          ARTIFACT_NAME: autograder_results
+          ARTIFACT_NAME: autograder_result
         run: |
           python3 - <<'PY'
           import csv, io, json, os, re, sys, zipfile
