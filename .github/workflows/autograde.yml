@@ -10,7 +10,6 @@ on:
 
 permissions:
   contents: read
-  pull-requests: write
 
 jobs:
   grade:
@@ -51,4 +50,9 @@ jobs:
         run: |
           echo "## Autograde result" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          cat submissions/**/autograder_results.json >> $GITHUB_STEP_SUMMARY
+          if ls submissions/**/autograder_results.json 1> /dev/null 2>&1; then
+            cat submissions/**/autograder_results.json >> $GITHUB_STEP_SUMMARY
+          else
+            echo "_No autograder_results.json found._" >> $GITHUB_STEP_SUMMARY
+          fi
+        
